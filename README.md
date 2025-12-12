@@ -1,4 +1,4 @@
-# CLI Portfolio Website
+# My Portfolio Website
 
 A retro-themed personal portfolio website designed to look and feel like a Command Line Interface (CLI).
 
@@ -22,11 +22,3 @@ A retro-themed personal portfolio website designed to look and feel like a Comma
 2.  Open `index.html` in your browser.
 3.  Ensure `cinderella.mp3` is in the root directory for the music player to work.
 
-## Deployment
-
-This project is ready to be deployed on GitHub Pages.
-
-1.  Push the code to a GitHub repository.
-2.  Go to **Settings** > **Pages**.
-3.  Select the `main` branch as the source.
-4.  Save and visit your live site!
