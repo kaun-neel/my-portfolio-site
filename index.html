@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel's Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="scanline"></div>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="buttons">
+                <span class="btn red"></span>
+                <span class="btn yellow"></span>
+                <span class="btn green"></span>
+            </div>
+            <div class="title">Neel@portfolio: ~</div>
+            <div style="display: flex; align-items: center;">
+                <div class="timestamp" id="timestamp">--:--:--</div>
+                <button class="theme-toggle" id="theme-toggle">[ THEME ]</button>
+            </div>
+        </div>
+
+        <div class="terminal-body">
+            <div class="intro-section">
+                <p class="prompt"><span class="user">Neel</span><span class="at">@</span><span
+                        class="host">portfolio</span><span class="colon">:</span><span class="path">~</span>$ <span
+                        class="command">./welcome.sh</span></p>
+                <div class="typewriter" id="intro-text"></div>
+            </div>
+
+            <nav class="navigation">
+                <p class="comment"># Select a command to navigate:</p>
+                <ul class="command-list">
+                    <li><span class="cmd-prompt">></span> <a href="#about" class="cmd-link" data-target="about">cat
+                            about.txt</a></li>
+                    <li><span class="cmd-prompt">></span> <a href="#projects" class="cmd-link" data-target="projects">ls
+                            ./projects/</a></li>
+                    <li><span class="cmd-prompt">></span> <a href="#contact" class="cmd-link"
+                            data-target="contact">./contact.sh</a></li>
+                    <li><span class="cmd-prompt">></span> <a href="#music" class="cmd-link"
+                            data-target="music">./music.sh</a></li>
+                </ul>
+            </nav>
+
+            <main id="content-area">
+                <!-- Dynamic content will be loaded here -->
+                <div id="about" class="section hidden">
+                    <p class="prompt"><span class="user">Neel</span><span class="at">@</span><span
+                            class="host">portfolio</span><span class="colon">:</span><span class="path">~</span>$ <span
+                            class="command">cat about.txt</span></p>
+                    <div class="output">
+                        <p>Hello! Myself Neel and I'm a passionate analyst who loves analyze and research things.</p>
+                        <p>I specialize in researching in the fields of Data Science and Machine Learning with
+                            developing cool projects as a sidekick or an ick ;).</p>
+                        <br>
+                        <p>Stack:</p>
+                        <ul class="tree">
+                            <li>├── HTML5</li>
+                            <li>├── CSS3 (Creative Styling)</li>
+                            <li>├── JavaScript (ES6+)</li>
+                            <li>├── Python</li>
+                            <li>├── Go</li>
+                            <li>├── C++</li>
+                            <li>├── C</li>
+                            <li>├── Java</li>
+                            <li>├── TypeScript</li>
+                            <li>├── Node.js</li>
+                            <li>├── Firebase</li>
+                            <li>├── Git</li>
+                            <li>├── GitHub</li>
+                            <li>├── Docker</li>
+                            <li>├── Kubernetes</li>
+                            <li>└── GCP</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="projects" class="section hidden">
+                    <p class="prompt"><span class="user">Neel</span><span class="at">@</span><span
+                            class="host">portfolio</span><span class="colon">:</span><span class="path">~</span>$ <span
+                            class="command">ls -la ./projects/</span></p>
+                    <div class="output grid-output">
+                        <div class="card">
+                            <h3>Graphy.io</h3>
+                            <p>Social Network Analysis using Graph Neural Networks</p>
+                            <a href="https://github.com/kaun-neel/graphy.io-GNN-Social-Analysis">[View Source]</a>
+                        </div>
+                        <div class="card">
+                            <h3>MultiAgent-Debate-DAG-Model</h3>
+                            <p>A sophisticated debate simulation system where two AI agents (Scientist vs Philosopher)
+                                engage in structured arguments using LangGraph workflows.</p>
+                            <a href="https://github.com/kaun-neel/MultiAgent-Debate-DAG-Model">[View Source]</a>
+                        </div>
+                        <div class="card">
+                            <h3>Tempestra</h3>
+                            <p>A deep learning climate model surrogate that uses advanced neural networks to predict
+                                weather patterns and storm trajectories across different regions.</p>
+                            <a href="https://github.com/kaun-neel/Tempestra">[View Source]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact" class="section hidden">
+                    <p class="prompt"><span class="user">Neel</span><span class="at">@</span><span
+                            class="host">portfolio</span><span class="colon">:</span><span class="path">~</span>$ <span
+                            class="command">./contact.sh</span></p>
+                    <div class="output">
+                        <p>Initiating connection...</p>
+                        <p>Email: <a href="mailto:indraneelbose89191@gmail.com"
+                                class="highlight">indraneelbose89191@gmail.com</a></p>
+                        <p>GitHub: <a href="https://github.com/kaun-neel" class="highlight">kaun-neel</a></p>
+                        <p>StackOverflow: <a href="https://stackoverflow.com/users/19200067/indraneel-bose "
+                                class="highlight">indraneel-bose</a></p>
+                        <br>
+                        <form class="cli-form">
+                            <div class="input-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" placeholder="_">
+                            </div>
+                            <div class="input-group">
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" rows="1" placeholder="_"></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">[ SEND MESSAGE ]</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="music" class="section hidden">
+                    <p class="prompt"><span class="user">Neel</span><span class="at">@</span><span
+                            class="host">portfolio</span><span class="colon">:</span><span class="path">~</span>$ <span
+                            class="command">./music.sh</span></p>
+                    <div class="output">
+                        <p>Loading my favourite playlist configuration...</p>
+                        <p>Now Playing: <span class="highlight">Cinderella - Future & Metro Boomin</span></p>
+
+                        <div class="music-player-ui">
+                            <div class="visualizer">
+                                <span></span><span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="controls">
+                                <button id="btn-pause" class="control-btn">[ || ]</button>
+                                <button id="btn-replay" class="control-btn">[ ↻ ]</button>
+                            </div>
+                        </div>
+
+                        <p>Checkout my playlist on:</p>
+                        <ul class="tree">
+                            <li>├── <a href="https://music.apple.com/in/playlist/ixi/pl.u-yZyVE31CdMBNVoA"
+                                    target="_blank">[ Apple Music ]</a></li>
+                            <li>└── <a
+                                    href="https://music.youtube.com/playlist?list=PLCRYBxEaZZdCKVLeEaimGS-WymsBlRSZ9&si=u2xg9lAXoKumrB6_"
+                                    target="_blank">[ YouTube Music ]</a></li>
+                        </ul>
+                    </div>
+                    <audio id="bg-music" src="cinderella.mp3" preload="auto"></audio>
+                </div>
+            </main>
+
+            <div class="active-line">
+                <span class="user">Neel</span><span class="at">@</span><span class="host">portfolio</span><span
+                    class="colon">:</span><span class="path">~</span>$ <span class="cursor">_</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
